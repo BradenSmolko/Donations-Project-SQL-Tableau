@@ -54,7 +54,7 @@ Order By donor_total.total DESC; -- Order By total donations descending so that 
 	REQUEST 2:
 
 	Each donor belongs to an organization and each organization has a labeled sector that they operate in. 
-	Could you tell me much each sector has donated to our group?
+	Could you tell me how much each sector has donated to our group?
 */
 Select 
 	[donation info].sector AS 'Organization Sector',
@@ -142,7 +142,7 @@ Order By (donor.firstName + ' ' + donor.lastName); -- Reference the concatenated
 	REQUEST 6:
 
 	We want you to look at the data more in Tableau, which we know can connect directly to this database server. 
-	Could you write a custom query to use in Tableau that would create a data source with relevant donation information and build us some visuals?
+	Could you write a custom query to use in Tableau that would create a data source with relevant donation information to build some visuals?
 */
 -- I don't use the [donation info] view here so that I can paste this part into Tableau without needing the view to exist
 Select donation.date AS 'Date', donation.amount AS 'Amount', -- Information from the donation table
@@ -153,4 +153,4 @@ Left Join donor
 	ON donation.donation_idDonor = donor.idDonor) -- Left join to include only donors that appear in the donation table
 Left Join organization
 	ON donor.donor_idOrg = organization.idOrg) -- Left join again to only include organizations that have a donor in the donations table
-Order By donation.date; -- Tableau's custom queries don't allow having an Order By clause or a semicolon though, so I removed them for import
+Order By donation.date; -- Tableau treats custom queries like a view, so we can't actually include this like when pasting into Tableau

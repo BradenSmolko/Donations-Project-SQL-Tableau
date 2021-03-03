@@ -1,0 +1,163 @@
+idOrg,orgName,sector
+1,"Moore, Turner and Auer",Health Care
+2,"Purdy, Miller and Toy",Health Care
+3,Mante-Marks,Public Utilities
+4,Borer-Bogisich,Capital Goods
+5,"Goodwin, Walker and Crona",Health Care
+6,"Marvin, Weimann and Krajcik",Technology
+7,Considine and Sons,n/a
+8,Zieme-Schuppe,Finance
+9,Wyman Group,Consumer Non-Durables
+10,"West, Trantow and Kirlin",Consumer Services
+11,Ullrich Inc,Finance
+12,"Collier, Johnston and Howell",n/a
+13,White Inc,n/a
+14,Schoen Inc,n/a
+15,Kulas-Klocko,Finance
+16,"Medhurst, Aufderhar and Bogan",n/a
+17,Bauch-Spencer,Transportation
+18,"DuBuque, Bernhard and Witting",Health Care
+19,Casper-Beier,Finance
+20,Mann-Smitham,n/a
+21,"Homenick, Bogan and Nienow",n/a
+22,Jones-Waelchi,Finance
+23,"Johns, Ruecker and Metz",Consumer Services
+24,"Lesch, Metz and Borer",Technology
+25,Nitzsche and Sons,Consumer Services
+26,"Stiedemann, Effertz and Ward",Health Care
+27,Trantow and Sons,n/a
+28,"Marvin, Spinka and Barrows",Health Care
+29,Littel LLC,Consumer Services
+30,Ortiz Group,Consumer Durables
+31,"Boyle, Hayes and Runolfsson",Public Utilities
+32,"Gibson, Ruecker and Wyman",n/a
+33,Vandervort-Senger,Finance
+34,Orn LLC,Consumer Services
+35,Torphy Inc,Basic Industries
+36,"Grimes, Reynolds and Reynolds",Health Care
+37,"Reilly, Smitham and Harvey",Technology
+38,Crist Inc,Health Care
+39,Rolfson-Nader,n/a
+40,Bechtelar Inc,Consumer Services
+41,Breitenberg-Feil,n/a
+42,Barton-Herzog,Public Utilities
+43,"Dibbert, Walter and Schimmel",Public Utilities
+44,Walker-Goyette,n/a
+45,Upton-Rath,Consumer Services
+46,Shanahan-Hauck,Consumer Services
+47,Walsh Group,Finance
+48,Haley Inc,Transportation
+49,Kihn-Champlin,Health Care
+50,Feil-Waelchi,Basic Industries
+51,Champlin-Veum,n/a
+52,Klein-Miller,Health Care
+53,"Wilderman, Mayer and Stracke",Health Care
+54,VonRueden Group,n/a
+55,Sauer LLC,Consumer Services
+56,Frami-D'Amore,Technology
+57,Kuhn-Grant,n/a
+58,"Runte, Marks and Hagenes",Finance
+59,Jaskolski-Ferry,Consumer Services
+60,Kuhic-Hills,Consumer Durables
+61,VonRueden Inc,Finance
+62,Wiza Group,Consumer Services
+63,Thompson Group,n/a
+64,Quitzon and Sons,Health Care
+65,"Schiller, Steuber and Mann",Finance
+66,Cummings-Jones,Consumer Services
+67,Witting Group,Transportation
+68,"Trantow, McLaughlin and Morissette",Health Care
+69,Keebler LLC,Consumer Services
+70,Corkery Inc,Finance
+71,Barton-Hammes,Technology
+72,Kuvalis-Cassin,Capital Goods
+73,Renner and Sons,Finance
+74,"Berge, Deckow and Leannon",Consumer Services
+75,Lemke-Harber,Consumer Services
+76,"Herzog, Wuckert and Braun",Health Care
+77,Treutel Inc,n/a
+78,Barton-Kessler,n/a
+79,"McCullough, Gleichner and Weissnat",Finance
+80,McGlynn-Lueilwitz,Finance
+81,Kshlerin-Emard,Finance
+82,"Halvorson, Lind and Leffler",Finance
+83,Graham LLC,Energy
+84,Champlin Inc,n/a
+85,Kirlin-Kuhlman,Consumer Services
+86,Fahey Inc,Consumer Non-Durables
+87,Murphy Group,Consumer Services
+88,"Cremin, Runte and Fahey",Health Care
+89,"Friesen, Effertz and Smith",Capital Goods
+90,"Conn, Murray and Abernathy",Health Care
+91,Hammes and Sons,n/a
+92,"Mraz, Smith and Langworth",Energy
+93,"Mayert, Jacobson and Homenick",Capital Goods
+94,Rath-Muller,n/a
+95,Senger LLC,Finance
+96,Cummerata-Walker,Capital Goods
+97,Tillman and Sons,Finance
+98,Kulas LLC,Capital Goods
+99,Balistreri-Upton,Consumer Services
+100,Fahey Inc,Consumer Services
+101,Rohan Inc,Capital Goods
+102,"Schiller, Reichel and Watsica",Technology
+103,Leuschke and Sons,Health Care
+104,Barrows-Mueller,Finance
+105,Barton and Sons,Capital Goods
+106,Haley-Ullrich,n/a
+107,Bahringer Inc,n/a
+108,Roob and Sons,Health Care
+109,"Johnston, Sipes and Beahan",Transportation
+110,Cassin-Goldner,Transportation
+111,"Thompson, Marks and Huels",n/a
+112,Cormier Inc,Consumer Services
+113,"Kub, Bednar and Waelchi",Transportation
+114,Kub-Emmerich,Finance
+115,"Bechtelar, Baumbach and Cormier",n/a
+116,Deckow Inc,n/a
+117,"Weimann, Macejkovic and Hudson",n/a
+118,Rowe-Buckridge,n/a
+119,"Purdy, Hauck and Jacobs",Capital Goods
+120,Cruickshank-Blanda,Public Utilities
+121,"Lubowitz, Trantow and Schuppe",n/a
+122,"Welch, Connelly and Daniel",Finance
+123,Kautzer and Sons,Finance
+124,Johnston and Sons,Health Care
+125,Gutmann-Lindgren,Consumer Services
+126,Schmitt and Sons,n/a
+127,Nienow Group,n/a
+128,Rosenbaum-Ratke,n/a
+129,McGlynn Group,n/a
+130,Ratke-Yost,Consumer Durables
+131,Stanton and Sons,Health Care
+132,"Reinger, Sauer and Kertzmann",n/a
+133,"Goodwin, White and Davis",Finance
+134,Schaefer-Ledner,Miscellaneous
+135,Fahey-Lockman,Consumer Services
+136,"Muller, Hirthe and Boyle",Transportation
+137,Schaefer and Sons,n/a
+138,Crist-Gulgowski,Consumer Non-Durables
+139,"Streich, Lang and Okuneva",n/a
+140,Goldner Group,Consumer Services
+141,Spencer Inc,Finance
+142,Schinner-Gerlach,n/a
+143,"Kulas, Lueilwitz and Senger",Technology
+144,"Walter, O'Hara and Christiansen",Consumer Services
+145,"Nader, Erdman and Zemlak",Finance
+146,"Kuhlman, Waters and Renner",Technology
+147,"Hagenes, Corwin and Greenfelder",Energy
+148,Weissnat and Sons,Energy
+149,Connelly Group,n/a
+150,Johnson-Rodriguez,Consumer Non-Durables
+151,"Hagenes, Barrows and Funk",n/a
+152,Price-Heaney,n/a
+153,"Trantow, Barton and Batz",Health Care
+154,Stokes-Graham,Technology
+155,"Walsh, Harris and Rowe",Finance
+156,"Becker, Boyer and Feeney",Health Care
+157,"Rogahn, Block and Larkin",Public Utilities
+158,Denesik and Sons,Consumer Services
+159,Pacocha-Zemlak,n/a
+160,Kassulke-Gutmann,Consumer Services
+161,Ryan-Tillman,Public Utilities
+162,"Altenwerth, Emmerich and Schinner",Health Care

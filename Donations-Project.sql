@@ -3,12 +3,13 @@
 	Theses requests focus on exploring your donors and donations, and developing email lists for further communication with the donors.
 	
 	The data is stored in 4 tables:
-		donation - this table conatins record of all donations given to the organization
-		donor - this table contains information about the donors who make donations
-		organization - each donor belongs to an organization and this table contains infromation about them
-		communication - donors are sent communications, this table represents a collection of these communications
+		donation - this table conatins record of all donations given to your group
+		donor - this table contains information about the donors
+		organization - each donor belongs to an organization/company and this table contains infromation about their organizations
+		communication - donors are sometimes sent communications, this table represents a collection of these communications
 
 	I will be connecting entries in the donation table with their respective donors and organization information multiple times, so I create a view below to store this.
+	First I drop the view if it already exists, then I create the [donation info] view.
 */
 Drop View If Exists [donation info];
 GO
@@ -32,7 +33,7 @@ GO -- MS SQL requires that the Create View statement is the only statement in a 
 	Could you get me the names and emails of the top 10 donors of all time? 
 	We'd like to reach out to thank them for their support.
 */
-With donor_total AS ( -- Create a sub-query block to calculate donor total donations, name it donor_total
+With donor_total AS ( -- Create a sub-query block to calculate total donations by donor, name it donor_total
 	Select 
 		donation_idDonor AS 'donor_total_idDonor',
 		SUM(amount) AS 'total' 
@@ -119,7 +120,8 @@ latest_communication AS ( -- Create a sub-query block that returns a collection 
 Select Distinct -- Select Distinct to get one row per donor
 	(donor.firstName + ' ' + donor.lastName) AS 'Donor Name',
 	donor.email AS 'Email',
-	latest_donation.date AS 'Last Donated' 
+	latest_donation.date AS 'Last Donated',
+	latest_communication.date AS 'Last Communication'
 From ((latest_donation
 Left Join donor -- Left join to include only the donors that appear in the donation table
 	ON latest_donation.latest_donation_idDonor = donor.idDonor)
@@ -134,7 +136,7 @@ In the first part of the Where clause, I filter out any donors that have donated
 In the second part of the Where clause, I filter our any donors that have received communication from the group in the past 18 months (1.5 years)
 */
 Where DATEDIFF(MONTH, latest_donation.date, GETDATE()) > 60
-	AND DATEDIFF(MONTH, latest_communication.date, GETDATE()) < 18
+	AND DATEDIFF(MONTH, latest_communication.date, GETDATE()) > 18
 Order By (donor.firstName + ' ' + donor.lastName); -- Reference the concatenated column by the calculation because we cannot refer to the aliased name
 
 
@@ -153,4 +155,4 @@ Left Join donor
 	ON donation.donation_idDonor = donor.idDonor) -- Left join to include only donors that appear in the donation table
 Left Join organization
 	ON donor.donor_idOrg = organization.idOrg) -- Left join again to only include organizations that have a donor in the donations table
-Order By donation.date; -- Tableau treats custom queries like a view, so we can't actually include this like when pasting into Tableau
+Order By donation.date; -- Tableau treats custom queries like a view, so we can't actually include this line when pasting into Tableau

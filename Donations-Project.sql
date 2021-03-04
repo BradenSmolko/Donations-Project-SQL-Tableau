@@ -130,10 +130,10 @@ Left Join latest_communication -- Left join to include only communications with 
 /*
 Use the DATEDIFF() function to calculate the number of months between the latest donation date and the current date using GETDATE().
 I pass MONTH into the function instead of YEAR to get the date difference in months which internally rounds by months instead of years.
-This difference in rounding ends up returns more records that are still accurately within the time period specified.
+This difference in rounding ends up returning more records that accurately fit within the time period specified.
 
 In the first part of the Where clause, I filter out any donors that have donated in the past 60 months (5 years).
-In the second part of the Where clause, I filter our any donors that have received communication from the group in the past 18 months (1.5 years)
+In the second part of the Where clause, I filter our any donors that have received communication from our group in the past 18 months (1.5 years)
 */
 Where DATEDIFF(MONTH, latest_donation.date, GETDATE()) > 60
 	AND DATEDIFF(MONTH, latest_communication.date, GETDATE()) > 18
